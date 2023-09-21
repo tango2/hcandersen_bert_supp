@@ -1,2 +1,4 @@
 # hcandersen_bert_supp
-Supplemental materials for HC Andersen Bertopic paper
+Supplemental materials for 
+Travels with BERT: 
+HC Andersen’s Travel Writing and Fairy Tales Through the Network Lens of Large Language Model-based Topic Modeling
