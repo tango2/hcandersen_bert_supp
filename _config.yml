@@ -1,3 +1,4 @@
+baseurl: /hcandersen_bert_supp
 plugins:
   - jekyll-feed
   - jekyll-sitemap
