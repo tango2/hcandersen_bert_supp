@@ -1,0 +1,445 @@
+
+    <html>
+    <head>
+        <title>g1_cleaned_labels.csv</title>
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            th, td {
+                border: 1px solid black;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            th:hover, td:hover {
+                overflow: visible;
+                white-space: normal;
+            }
+        </style>
+    </head>
+    <body>
+        <table border="1" class="dataframe" id="data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Topic</th>
+      <th>Count</th>
+      <th>cTFIDF</th>
+      <th>KeyBert</th>
+      <th>KeyBert_lem</th>
+      <th>DaCY_PoS</th>
+      <th>MMR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-1</td>
+      <td>941</td>
+      <td>saae, see, ganske, vare</td>
+      <td>saae, see, skulde, deres</td>
+      <td>skulde, sidde, der, ville</td>
+      <td>stor, al, gammel, lille</td>
+      <td>det, den, han, der</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>100</td>
+      <td>vandet, skibet, havfrue, saae</td>
+      <td>saae, skibet, havfrue, øine</td>
+      <td>havfrue, saae, øie, skib</td>
+      <td>være, stor, lille, hvid</td>
+      <td>hun, de, skibet, saae</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>78</td>
+      <td>dybe, vei, grønne, laae</td>
+      <td>bjergene, høie, klippen, sti</td>
+      <td>stige, ned, vi, styrte</td>
+      <td>dyb, stor, høi, skov</td>
+      <td>der, dybe, de, vei</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>75</td>
+      <td>sjæl, havfrue, kyssede, smukke</td>
+      <td>smilede, smukke, deilige, havfrue</td>
+      <td>smukk, deilig, ansigt, kind</td>
+      <td>have, smukk, deilig, al</td>
+      <td>hun, hans, ikke, saae</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>71</td>
+      <td>hjerte, sang, synger, toner</td>
+      <td>synger, sang, musik, fugl</td>
+      <td>synge, musik, sang, tone</td>
+      <td>verden, have, sig, stor</td>
+      <td>hjerte, den, mit, dog</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>65</td>
+      <td>claus, store claus, heste, penge</td>
+      <td>claus, posen, lille, faae</td>
+      <td>claus, pose, skulle, faae</td>
+      <td>lille, sige, stor, bedstemoder</td>
+      <td>lille, han, saa, skal</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>59</td>
+      <td>billede, levende, natur, herlige</td>
+      <td>saae, følte, nyt, billede</td>
+      <td>betragte, der, saae, gjennem</td>
+      <td>hel, levende, herlig, anden</td>
+      <td>det, billede, den, dette</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>58</td>
+      <td>digter, digteren, tydsk, dannemark</td>
+      <td>digteren, hørte, nordmænd, velkommen</td>
+      <td>tale, sprog, læse, skrive</td>
+      <td>dansk, meget, tydsk, ung</td>
+      <td>han, digter, digteren, ikke</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>55</td>
+      <td>flyve, hør, varme lande, varme</td>
+      <td>storkeungerne, fløi, smaa, storkemoderen</td>
+      <td>storkeungerne, flyve, fløi, storkemoder</td>
+      <td>sige, ere, varm, komme</td>
+      <td>sagde, flyve, ikke, storkene</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>47</td>
+      <td>laae, sadde, tæt, veien</td>
+      <td>spadserede, aabne, saae, vognen</td>
+      <td>som, sadde, der, den</td>
+      <td>stor, lille, berømt, broged</td>
+      <td>paa, der, ved, her</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>40</td>
+      <td>sjæl, udødelig sjæl, udødelig, hex</td>
+      <td>deilige, solen, alferne, grønnes</td>
+      <td>vor, violine, faae, vi</td>
+      <td>al, sjæl, udødelig, hel</td>
+      <td>vi, alle, udødelig, vor</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>34</td>
+      <td>hav, bjerge, store, grændse</td>
+      <td>bjergene, bjerge, skyer, høie</td>
+      <td>sky, høi, lyste, som</td>
+      <td>stor, hel, herlig, sort</td>
+      <td>hav, der, bjerge, kun</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>32</td>
+      <td>soldaten, hunden, forklæde, fyrtøi</td>
+      <td>sølvskillinger, sølvpenge, lommer, guld</td>
+      <td>sølvpenge, faae, fyrtøi, skulle</td>
+      <td>hexen, sige, stor, første</td>
+      <td>soldaten, han, saa, forklæde</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>31</td>
+      <td>arme, tog, benet, slog</td>
+      <td>skibsseil, stort, brækket, slæbet</td>
+      <td>skulde, som, saa, tykk</td>
+      <td>hel, hvid, stor, al</td>
+      <td>de, paa, arme, tog</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>28</td>
+      <td>tinsoldaten, digter, gamle digter, ak</td>
+      <td>tinsoldaten, tinsoldat, udenfor, frost</td>
+      <td>tinsoldaten, dør, vindu, tinsoldat</td>
+      <td>være, gammel, samme, god</td>
+      <td>tinsoldaten, digter, han, nu</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>28</td>
+      <td>grene, ligesom, sang, smaa</td>
+      <td>blomsterne, blomster, klokkerne, glæde</td>
+      <td>blomste, blomst, rose, rosin</td>
+      <td>al, god, smaa, stor</td>
+      <td>piletræ, grene, blomster, smaa</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>28</td>
+      <td>blomsten, blomst, blade, farvel</td>
+      <td>fuglens, blomstens, blomst, fugl</td>
+      <td>blomst, smukk, gul, fugl</td>
+      <td>blomst, lille, farvel, være</td>
+      <td>blomsten, blomst, sang, lille</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>26</td>
+      <td>prindsesse, prindsessen, kongen, prinds</td>
+      <td>ville, kongen, gjætte, skulde</td>
+      <td>skulde, kunde, gjætte, hæslig</td>
+      <td>soldat, deilig, rigtig, virkelig</td>
+      <td>prindsesse, prindsessen, han, kunde</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>26</td>
+      <td>blomsterne, studenten, ida, blomster</td>
+      <td>botaniske, blomster, blomsterne, blomst</td>
+      <td>blomste, fortælle, forstaae, dandse</td>
+      <td>lille, være, al, botanisk</td>
+      <td>studenten, ida, blomster, de</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>24</td>
+      <td>tommelise, bladet, svømmede, svalen</td>
+      <td>tommelise, fløi, fiin, guldkrone</td>
+      <td>tommelise, smaa, sidde, skruptudse</td>
+      <td>nydelig, lille, let, grønne</td>
+      <td>tommelise, den, svømmede, svalen</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>23</td>
+      <td>dandsede, nydeligste, konge, prindsessen</td>
+      <td>hofdamerne, silkekjoler, nydeligste, deiligste</td>
+      <td>hofdamer, deiligste, dronning, deilig</td>
+      <td>al, nydeligste, deilig, smaa</td>
+      <td>de, dandsede, nydeligste, prindsessen</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>21</td>
+      <td>seng, sophie, skuffen, ligge</td>
+      <td>dukkesengen, sove, ligge, sov</td>
+      <td>dukkesenge, sengekant, sove, ligge</td>
+      <td>seng, lille, hel, forskrækkeligt</td>
+      <td>sophie, ligge, skuffen, bordet</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>21</td>
+      <td>klæder, keiseren, nye, nye klæder</td>
+      <td>tøi, syede, saae, see</td>
+      <td>sye, tøi, væve, klæde</td>
+      <td>ny, have, meget, løierlig</td>
+      <td>klæder, keiseren, deres, syede</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>20</td>
+      <td>kirkegaarden, fødder, arbeide, onde</td>
+      <td>gravede, hænder, strikkede, haandfulde</td>
+      <td>krøbme, strikke, hæned, sig</td>
+      <td>ond, eensomm, lang, død</td>
+      <td>de, fødder, pantserskjorter, kjød</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>20</td>
+      <td>ole, ole lukøie, lukøie, hjalmar</td>
+      <td>lukøie, ole, see, deiligste</td>
+      <td>ole, lukøie, leerpotte, omgaae</td>
+      <td>sige, lille, allermindste, heel</td>
+      <td>ole, lukøie, hjalmar, historier</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>20</td>
+      <td>elben, tæt, byen, hôtel</td>
+      <td>høie, elbfloden, bjerg, elmenau</td>
+      <td>elbflod, broe, elben, elmenau</td>
+      <td>by, stor, broe, sidste</td>
+      <td>elben, sonnenstein, den, hôtel</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>19</td>
+      <td>sige, troe, ei, ret</td>
+      <td>veed, dem, seer, spaae</td>
+      <td>tænke, de, deres, fortælle</td>
+      <td>let, egen, more, have</td>
+      <td>de, paa, skal, troe</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>19</td>
+      <td>satte, fugl, prindsessen, posen</td>
+      <td>phønix, papirsæske, trolddrikken, plukket</td>
+      <td>phønix, boghvedegryn, papirsæske, palmeblad</td>
+      <td>lille, nydelig, lade, stor</td>
+      <td>phønix, prindsessen, giften, hun</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>18</td>
+      <td>catholske, catholske kirke, kirke, dresden</td>
+      <td>kirke, kirkemusik, prædiken, catholske</td>
+      <td>kirkemusik, kirke, catholsk, skriftestolene</td>
+      <td>catholsk, være, rulle, brühlsk</td>
+      <td>catholske, kirke, dresden, ceremonier</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>17</td>
+      <td>navne, vers, hvori, uleilighed</td>
+      <td>tegninger, skrevet, trykkes, maleren</td>
+      <td>skrive, der, bog, den</td>
+      <td>have, mange, mærkelig, afdød</td>
+      <td>her, vers, et, som</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>16</td>
+      <td>saae ellers, godtfolk, sang, taarnet</td>
+      <td>bordet, musikalske, spille, musiken</td>
+      <td>spille, musiken, vi, udtone</td>
+      <td>sang, traurig, al, første</td>
+      <td>pause, instrumenter, diavolo, godtfolk</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>15</td>
+      <td>hist, skinner, staae, høie</td>
+      <td>bjerget, høie, bjergstie, staae</td>
+      <td>staae, bjergstie, geisingbjerg, høi</td>
+      <td>høi, dyb, brun, graa</td>
+      <td>hist, skinner, staae, høie</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>15</td>
+      <td>pyntede, stor, hamborg, berlin</td>
+      <td>byen, by, sted, faaet</td>
+      <td>by, den, som, der</td>
+      <td>meget, stor, pynte, ligne</td>
+      <td>der, hamborg, berlin, luthers</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>14</td>
+      <td>væk, kys, ti, prindsessen</td>
+      <td>svinedrengen, svinedreng, svinene, hofdamer</td>
+      <td>svinedrengen, svinedreng, svinedrenge, svinesti</td>
+      <td>svinedreng, svare, hel, keiserlig</td>
+      <td>svinedrengen, huder, prindsessen, ti</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>14</td>
+      <td>kirke, gammel, læst, behage</td>
+      <td>kirkevindue, kirkestol, kirkeprocession, kirke</td>
+      <td>kirkevindue, kirkestol, kirkeprocession, klopstock</td>
+      <td>gammel, hellig, svæve, underlig</td>
+      <td>gammel, billede, malede, han</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>14</td>
+      <td>blomst, duft, hvert, farve</td>
+      <td>blomst, følte, frugttræer, blomster</td>
+      <td>blomst, duft, eie, trylleblomst</td>
+      <td>al, have, fin, være</td>
+      <td>blomst, et, blomster, alle</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>13</td>
+      <td>sal, vinduer, væggene, store</td>
+      <td>marmorbilleder, væggene, marmorslot, vinduer</td>
+      <td>salene, marmorslot, silkegardine, marmorbilled</td>
+      <td>stor, høi, mange, lang</td>
+      <td>vinduer, slot, væggene, statuer</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>13</td>
+      <td>blik, ei, liig, saae</td>
+      <td>kappen, saae, følte, helteblik</td>
+      <td>kapp, føle, saae, helteblik</td>
+      <td>tyst, godhjertig, mager, vild</td>
+      <td>saae, ei, tyst, kappe</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>13</td>
+      <td>hver, hver gang, gang, dag</td>
+      <td>gjentage, geographie, gjentog, sørgmodighed</td>
+      <td>desmere, geographie, agtelse, lectie</td>
+      <td>mere, meer, følge, stum</td>
+      <td>sit, hun, geographie, blegere</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>12</td>
+      <td>gid, riig, schweitz, italien</td>
+      <td>riig, hvis, sukkede, sandblomst</td>
+      <td>ville, riig, hvis, øieblikkelig</td>
+      <td>riig, saa, god, øverste</td>
+      <td>riig, schweitz, hvis, saa</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>12</td>
+      <td>etc, været, kjørte, 1831</td>
+      <td>skovpartie, egnen, liederzeit, schøne</td>
+      <td>der, som, viise, skovpartie</td>
+      <td>uoverseelig, lykkelig, sachsisk, tusinde</td>
+      <td>etc, 1831, napoleon, der</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>11</td>
+      <td>hjalmar, ænderne, storken, lee</td>
+      <td>hønsene, grinte, kalkunen, høns</td>
+      <td>kalkunsk, kalkunen, kalkun, hønsene</td>
+      <td>skrat, kalkunsk, storke, dum</td>
+      <td>hjalmar, hane, kalkunske, ænderne</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>11</td>
+      <td>stode, bogstaver, lokker, lange</td>
+      <td>stode, opstillede, formummede, høitidelige</td>
+      <td>skildte, som, med, slank</td>
+      <td>hvid, lang, stor, gul</td>
+      <td>stode, lange, egekrands, bogstaver</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>10</td>
+      <td>brudeparret, stode, vide, døren</td>
+      <td>døren, muus, mundskjægget, muurstene</td>
+      <td>mundskjægg, muurstene, beværtning, brolægning</td>
+      <td>elegant, forlove, udhule, ynkelig</td>
+      <td>fleskesvær, bedrøvelse, døren, brudeparret</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>10</td>
+      <td>svanerne, viste, svaner, elleve</td>
+      <td>vandsnoge, faldt, havhexen, svanehammen</td>
+      <td>svanehamm, vandsnog, svanevinge, havhexe</td>
+      <td>hvid, lang, kulsort, sort</td>
+      <td>svanerne, vandet, svaner, elleve</td>
+    </tr>
+  </tbody>
+</table>
+    </body>
+    </html>
+    

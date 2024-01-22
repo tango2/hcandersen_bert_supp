@@ -1,0 +1,391 @@
+
+    <html>
+    <head>
+        <title>g4_cleaned_labels.csv</title>
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            th, td {
+                border: 1px solid black;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            th:hover, td:hover {
+                overflow: visible;
+                white-space: normal;
+            }
+        </style>
+    </head>
+    <body>
+        <table border="1" class="dataframe" id="data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Topic</th>
+      <th>Count</th>
+      <th>cTFIDF</th>
+      <th>KeyBert</th>
+      <th>KeyBert_lem</th>
+      <th>DaCY_PoS</th>
+      <th>MMR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-1</td>
+      <td>751</td>
+      <td>selv, saae, see, gamle</td>
+      <td>laae, saae, skulde, sad</td>
+      <td>fortælle, tale, sidde, gaae</td>
+      <td>lille, al, gammel, god</td>
+      <td>det, den, hun, ikke</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>1168</td>
+      <td>vare, store, saae, laae</td>
+      <td>skulde, vor, spanske, os</td>
+      <td>skulde, som, ikke, vi</td>
+      <td>stor, by, al, mange</td>
+      <td>den, de, det, der</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>98</td>
+      <td>blomst, gartneren, herskabet, hver</td>
+      <td>blomsten, frugthandleren, blomst, blomster</td>
+      <td>blomste, blomst, rose, frugthandler</td>
+      <td>ung, stor, deilig, al</td>
+      <td>blomst, de, gartneren, hver</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>98</td>
+      <td>rasmus, hjelpe, maren, johanne</td>
+      <td>handske, rasmus, datter, gaae</td>
+      <td>hun, gaae, handske, fader</td>
+      <td>have, lille, god, gammel</td>
+      <td>han, hun, sagde, det</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>52</td>
+      <td>øinene, øine, saae, munden</td>
+      <td>smukke, deiligt, smuk, skjønhed</td>
+      <td>smukk, skjønhed, smuk, sol</td>
+      <td>være, deilig, ung, gud</td>
+      <td>som, de, øine, saae</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>50</td>
+      <td>fløi, vildes, skreg, krager</td>
+      <td>fuglene, fugl, fugle, hvid</td>
+      <td>graa, fugl, flyve, naar</td>
+      <td>gammel, stor, hvid, smaa</td>
+      <td>de, han, fløi, hun</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>47</td>
+      <td>fisk, ting, ovenfra, touget</td>
+      <td>søslange, svømmede, havfisk, fisk</td>
+      <td>søslange, søpølse, havaal, havskabning</td>
+      <td>stor, lille, al, umaadelig</td>
+      <td>fisk, de, ovenfra, der</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>47</td>
+      <td>generalen, georg, generalinden, hr georg</td>
+      <td>generalinden, generalens, generalen, talte</td>
+      <td>generalinden, generalinde, generalind, general</td>
+      <td>sige, have, charmant, lille</td>
+      <td>generalen, georg, generalinden, han</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>44</td>
+      <td>voxlys, lys, nordostvinden, tællelyset</td>
+      <td>voxlyset, voxlysene, lysbørnene, lys</td>
+      <td>voxlyset, lys, lysbørnene, lyse</td>
+      <td>lille, hel, lyse, al</td>
+      <td>voxlys, skal, nordostvinden, lille</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>42</td>
+      <td>deiligste, deiligste eventyr, eventyr, livet deiligste eventyr</td>
+      <td>deiligste, eventyr, smaa, yndigste</td>
+      <td>deiligste, smaa, marie, barn</td>
+      <td>have, deiligste, al, lille</td>
+      <td>deiligste, lille, de, ikke</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>38</td>
+      <td>sidste, maatte, flyttet, skyde</td>
+      <td>forskuffen, bagskuffen, knappen, aflaasede</td>
+      <td>bagskuffe, bordskuffe, den, knappe</td>
+      <td>blive, lille, sidste, stor</td>
+      <td>den, han, ikke, der</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>35</td>
+      <td>frederik, kong, slottet, konge</td>
+      <td>staaer, slottets, slottet, konge</td>
+      <td>staae, frederik, ei, lukke</td>
+      <td>være, al, brænde, have</td>
+      <td>frederik, konge, adel, karm</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>34</td>
+      <td>tegnede, billeder, slot, udskaarne</td>
+      <td>tegnede, malede, tegnet, vinduerne</td>
+      <td>tegne, male, faa, vinduerne</td>
+      <td>og, lille, hvid, male</td>
+      <td>tegnede, de, et, slot</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>33</td>
+      <td>bog, bogen, læse, læste</td>
+      <td>læst, læste, læsning, bøger</td>
+      <td>boge, læse, eventyrboge, læsning</td>
+      <td>skoleholder, god, gammel, stor</td>
+      <td>han, læse, læste, skoleholderen</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>25</td>
+      <td>vandet, kyst, sank, qvinde</td>
+      <td>døde, ned, skjælvede, sank</td>
+      <td>ned, sank, skjælve, nordostvinde</td>
+      <td>en, være, stor, hvid</td>
+      <td>vandet, sank, de, qvinde</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>25</td>
+      <td>ende, længsel, støv, væk</td>
+      <td>døde, livsens, længsel, døgnfluens</td>
+      <td>forsvinde, forbløde, længsel, forlade</td>
+      <td>eneste, stakkels, halv, løs</td>
+      <td>kun, længsel, støv, forsvinder</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>23</td>
+      <td>arenaen, tyren, tyre, hest</td>
+      <td>tyr, arenaen, tyre, tyren</td>
+      <td>tyr, staae, tyrefegtning, tyre</td>
+      <td>blive, høi, hel, stor</td>
+      <td>arenaen, tyre, hest, de</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>20</td>
+      <td>gamle, tid, gamle johanne, huskede</td>
+      <td>hørte, husker, sang, gamle</td>
+      <td>høre, sang, huske, synge</td>
+      <td>gammel, være, have, lille</td>
+      <td>gamle, hun, hørte, sang</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>19</td>
+      <td>trommen, peter, brandtrommen, røde haar</td>
+      <td>trommestikkerne, trommelom, trommeskindet, trommen</td>
+      <td>trommelom, trommeskindet, trommen, trammeram</td>
+      <td>sige, tromme, trommelom, dum</td>
+      <td>trommen, peter, brandtrommen, trommelom</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>19</td>
+      <td>katten, fuglen, hønen, springe</td>
+      <td>buret, katten, kattens, sengetæppet</td>
+      <td>spindelvæve, tænke, fløi, katte</td>
+      <td>al, couleurte, blodfyldet, vindtørre</td>
+      <td>han, hønen, ikke, springe</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>17</td>
+      <td>tante, tante mille, mille, sukker</td>
+      <td>tandpine, søde, tante, tænder</td>
+      <td>tante, tandpine, tandpinesyn, guldteen</td>
+      <td>have, være, lille, falsk</td>
+      <td>tante, mille, lille, sukker</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>16</td>
+      <td>gryden, ædelsteen, frøer, nissen</td>
+      <td>gryde, pæreskuder, gryden, kogte</td>
+      <td>gryde, madamme, fløde, pæreskude</td>
+      <td>sige, saadan, forkølet, smagløs</td>
+      <td>frøer, nissen, han, fløde</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>16</td>
+      <td>espada, tyr, tyren, dyret</td>
+      <td>tyr, tyrens, stød, brækkede</td>
+      <td>tyr, stød, som, afrevne</td>
+      <td>blive, blod, ny, hinke</td>
+      <td>espada, tyr, dyret, blodet</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>16</td>
+      <td>tredie, løb, vogn, nyt</td>
+      <td>vognen, vogn, trak, vogne</td>
+      <td>vogn, kaftanklædte, toge, trækasse</td>
+      <td>tredie, ny, at, banegaard</td>
+      <td>vogn, kofferten, natsækken, os</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>16</td>
+      <td>klang, castagnetter, hører, accord</td>
+      <td>menneskestemmer, høre, hørte, klang</td>
+      <td>menneskestemme, klagelyd, høre, klagetone</td>
+      <td>klang, begynde, spansk, lang</td>
+      <td>klang, castagnetter, høre, skete</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>16</td>
+      <td>thiah, stille, kirkeklokker, toledos</td>
+      <td>hørtes, kirkeklokker, klingrede, trompetstødene</td>
+      <td>hørtes, musikme, musikcorps, kirkeklokkernes</td>
+      <td>stille, tung, navn, stjerneklar</td>
+      <td>mayoralen, kirkeklokker, toledos, hørtes</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>16</td>
+      <td>stod, hønsegrethe, gjester, stadselige</td>
+      <td>hønsegrethe, hønsene, hønsehuset, høns</td>
+      <td>hønsegrethe, hønsehus, hønsene, hønsehuus</td>
+      <td>gammel, stadselig, grav, rap</td>
+      <td>ænderne, hønsegrethe, gjester, gaard</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>15</td>
+      <td>potte, pære, manden, dreiede</td>
+      <td>pæretræet, pæretræ, træpærer, peiterpeterpeer</td>
+      <td>pæretræ, peiterpeterpeer, træpære, peitersen</td>
+      <td>god, blive, ligge, stor</td>
+      <td>pære, potte, dreiede, pæretræ</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>15</td>
+      <td>susede, hvert, grene, vind</td>
+      <td>rungede, vindstød, træets, egetræes</td>
+      <td>vindstød, træ, egetræe, regn</td>
+      <td>suse, og, gammel, komme</td>
+      <td>susede, det, vind, træet</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>15</td>
+      <td>mosekonen, lidt, poesi, fiirkløver</td>
+      <td>fireogtredsindstyve, tønden, mosekonen, fiirkløver</td>
+      <td>flaske, flasker, blækklatte, tønde</td>
+      <td>lidt, snavse, ene, sød</td>
+      <td>mosekonen, sexkløver, fiirkløver, de</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>14</td>
+      <td>lygtemand, lygtemænd, loppen, lygtemændene</td>
+      <td>lygtemand, lygtemænd, lygtemændene, lygtemanden</td>
+      <td>lygtemand, lygtemændene, lill, le</td>
+      <td>al, professoren, heel, stolt</td>
+      <td>lygtemand, lygtemænd, loppen, lygtemændene</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>14</td>
+      <td>loppen, høiere, ballonen, spanden</td>
+      <td>højere, høiere, loppen, brønden</td>
+      <td>høie, højere, loppen, høiere</td>
+      <td>stor, lille, hel, sige</td>
+      <td>loppen, ballonen, spanden, professoren</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>13</td>
+      <td>fugl, folkesangens fugl, folkesangens, synger</td>
+      <td>folkesangfuglens, folkesangs, folkesangens, sangsprog</td>
+      <td>folkesangfugl, folkesangens, sangfugl, sangsprog</td>
+      <td>sangfugl, suse, bro, vild</td>
+      <td>folkesangens, sang, synger, døer</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>13</td>
+      <td>stine, else, vidste, vide</td>
+      <td>vidste, stine, kunde, jomfruerne</td>
+      <td>sjeldnere, hun, som, stine</td>
+      <td>klog, meget, ny, få</td>
+      <td>stine, else, vidste, ikke</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>13</td>
+      <td>kys, historie, fortjent, fødderne</td>
+      <td>faaer, gyldne, strax, fortjent</td>
+      <td>faae, døe, guldkrone, strax</td>
+      <td>kys, død, hedensk, poetens</td>
+      <td>han, kys, det, slotsherre</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>13</td>
+      <td>lottelene, nøglen, kammerraaden, seier lykke</td>
+      <td>lotte, nøgle, lottelenes, lottelene</td>
+      <td>lotte, nøgle, lottelene, nøglebog</td>
+      <td>yndig, være, egen, mærkelig</td>
+      <td>lottelene, kammerraaden, lotte, lykke</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>13</td>
+      <td>gud, kjærne, frelse, dømme</td>
+      <td>kirkes, religiøse, hellige, kirke</td>
+      <td>troesgløde, tro, katholicismen, hellig</td>
+      <td>gud, eneste, ukjærligt, spleensyg</td>
+      <td>kjærne, frelse, spleensyg, ukjærligt</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>12</td>
+      <td>dryaden, løftet, skinnede, gasflammer</td>
+      <td>solstraalende, lyste, sommersolskin, blus</td>
+      <td>solstraale, lyse, gaslamperne, eviggløde</td>
+      <td>skinne, solstraale, eviggløde, fuldmaan</td>
+      <td>dryaden, gasflammer, lyste, luftning</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>10</td>
+      <td>portnøglen, kammerraaden, nøgler, portnøgle</td>
+      <td>portnøglen, portnøgle, nøgle, nøglen</td>
+      <td>portnøglen, portnøgl, portnøg, portnøgle</td>
+      <td>al, svare, forsvundee, grov</td>
+      <td>portnøglen, kammerraaden, portnøgle, nøgle</td>
+    </tr>
+  </tbody>
+</table>
+    </body>
+    </html>
+    
