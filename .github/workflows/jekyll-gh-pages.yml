@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 # Set the theme
-theme: minima
+# theme: minima
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
